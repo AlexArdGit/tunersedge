@@ -5,11 +5,11 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   template: `
-<nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+<nav class="navbar is-fixed-top is-transparent is-primary" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a class="navbar-item has-text-weight-bold is-size-5" href="#">TUNERSEDGE</a>
 
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+    <a role="button" class="navbar-burger" id="burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
@@ -17,8 +17,8 @@ import { Component } from '@angular/core';
     </a>
   </div>
 
-  <div id="navbarBasicExample" class="navbar-menu">
-    <div class="navbar-start">
+  <div id="navMenu" class="navbar-menu">
+    <div class="navbar-start has-text-weight-medium">
       <a class="navbar-item">
         Home
       </a>
@@ -30,36 +30,8 @@ import { Component } from '@angular/core';
       <a class="navbar-item">
         Prices
       </a>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item">
-            1
-          </a>
-          <a class="navbar-item">
-            2
-          </a>
-          <a class="navbar-item">
-            3
-          </a>
-          <a class="navbar-item">
-            4
-          </a>
-        </div>
       </div>
     </div>
-
-    <div class="navbar-end">
-      <div class="navbar-item">
-        <div class="buttons">
-          <a class="button is-light">Light</a>
-        </div>
-      </div>
-    </div>
-  </div>
 </nav>
   `,
   styles: ``

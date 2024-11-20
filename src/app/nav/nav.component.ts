@@ -5,33 +5,35 @@ import { Component, ViewChild, ElementRef } from '@angular/core';
   standalone: true,
   imports: [],
   template: `
-<nav class="navbar is-fixed-top is-transparent is-primary" role="navigation" aria-label="main navigation">
+<nav class="navbar is-fixed-top is-transparent" role="navigation" aria-label="main navigation">
+<div class="container">
   <div class="navbar-brand">
-    <a class="navbar-item has-text-weight-bold is-size-5" href="#">TUNERSEDGE</a>
+    <a class="navbar-item has-text-weight-bold has-text-light is-size-5" href="#">TUNERSEDGE</a>
 
     <a (click)="toggleNavbar()" #navBurger role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
+      <span class="has-text-light" aria-hidden="true"></span>
+      <span class="has-text-light" aria-hidden="true"></span>
+      <span class="has-text-light" aria-hidden="true"></span>
+      <span class="has-text-light" aria-hidden="true"></span>
     </a>
   </div>
 
-  <div #navMenu id="navMenu" class="navbar-menu">
-    <div class="navbar-start has-text-weight-medium">
-      <a class="navbar-item">
+  <div #navMenu id="navMenu" class="navbar-menu is-size-6">
+    <div class="navbar-end has-text-weight-medium">
+      <a class="navbar-item has-text-light">
         Home
       </a>
 
-      <a class="navbar-item">
+      <a class="navbar-item has-text-light">
         Services
       </a>
 
-      <a class="navbar-item">
+      <a class="navbar-item has-text-light">
         Prices
       </a>
       </div>
     </div>
+</div>
 </nav>
   `,
   styles: ``

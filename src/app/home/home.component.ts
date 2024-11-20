@@ -1,22 +1,27 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-home',
   standalone: true,
   imports: [],
   template: `
-    <section class="section is-primary is-large"> 
-      <div class="container has-text-centered">
-      <h1 class="title">Home</h1>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-        It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-        It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-        and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-      </div>
-    </section>
+  <section class="hero is-fullheight">
+  <div class="hero-body">
+    <div class="">
+      <p class="title">Herzlich willkommen bei
+      Ihrer Hobbywerkstatt in Fürth!</p>
+      <p class="has-text-primary-light has-text-weight-semibold is-size-6">Die Hobbywerkstatt in Fürth, Tuner's Edge ist seit Februar 2016 für Sie im Dienst. <br>
+      Wir werden Sie mit moderner Ausstattung erwarten. <br> Schauen Sie sich unsere neuen Räumlichkeiten an und lassen <br> Sie uns bei einem Kaffee über die Vorteile der selbständigen Reparatur des eigenen Autos sprechen.</p>
+    </div>
+  </div>
+</section>
   `,
-  styles: ``
+  styles: [`
+  .hero{ 
+    background-image: url('src/assets/img/home-wallpaper.jpeg') !important;
+    background-size: cover;
+ 
+  }`]
 })
 export class HomeComponent {
 

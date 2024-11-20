@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-nav',
@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
   <div class="navbar-brand">
     <a class="navbar-item has-text-weight-bold is-size-5" href="#">TUNERSEDGE</a>
 
-    <a role="button" class="navbar-burger" id="burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <a (click)="toggleNavbar()" #navBurger role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
@@ -17,7 +17,7 @@ import { Component } from '@angular/core';
     </a>
   </div>
 
-  <div id="navMenu" class="navbar-menu">
+  <div #navMenu id="navMenu" class="navbar-menu">
     <div class="navbar-start has-text-weight-medium">
       <a class="navbar-item">
         Home
@@ -37,5 +37,13 @@ import { Component } from '@angular/core';
   styles: ``
 })
 export class NavComponent {
+  @ViewChild('navBurger')
+  navBurger!: ElementRef;
+  @ViewChild('navMenu')
+  navMenu!: ElementRef;
 
+  toggleNavbar() {
+    this.navBurger.nativeElement.classList.toggle('is-active');
+    this.navMenu.nativeElement.classList.toggle('is-active');
+  }
 }

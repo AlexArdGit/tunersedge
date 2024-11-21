@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   template: `
-    <section class="section is-primary is-bold is-medium"> 
+    <section class="section is-primary is-bold is-medium" id="services"> 
       <div class="container has-text-centered">
       <h1 class="title">Services</h1>
       <div class="tabs is-centered">

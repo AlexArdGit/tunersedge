@@ -15,7 +15,7 @@ import { Component } from '@angular/core';
             <div class="columns mt5 is-8 is-variable is-centered">
 
                 <!-- column 1 -->
-                <div class="column is-4-tablet is-3-desktip">
+                <div class="column is-4-tablet">
                     <div class="card">
                         <div class="card-image">
                             <figure class="image is-4by3">
@@ -89,7 +89,7 @@ import { Component } from '@angular/core';
                 </div>
 
                 <!-- column 2 -->
-                <div class="column is-4-tablet is-3-desktip">
+                <div class="column is-4-tablet">
                     <div class="card">
                         <div class="card-image">
                             <figure class="image is-4by3">
@@ -163,7 +163,7 @@ import { Component } from '@angular/core';
                 </div>
 
                 <!-- column 3 -->
-                <div class="column is-4-tablet is-3-desktip">
+                <div class="column is-4-tablet">
                     <div class="card">
                         <div class="card-image">
                             <figure class="image is-4by3">

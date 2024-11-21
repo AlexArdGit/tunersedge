@@ -22,7 +22,9 @@ import { Component, ViewChild, ElementRef } from '@angular/core';
     <div class="navbar-end has-text-weight-medium">
       <a class="navbar-item has-text-light" href="#home">Home</a>
       <a class="navbar-item has-text-light" href="#services">Services</a>
-      <a class="navbar-item has-text-light">Prices</a>
+      <a class="navbar-item has-text-light" href="#about">About</a>
+      <a class="navbar-item has-text-light" href="#reviews">Reviews</a>
+      <a class="navbar-item has-text-light" href="#contacts">Contacts</a>
     </div>
   </div>
 </div>

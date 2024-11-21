@@ -4,26 +4,38 @@ import { NavComponent } from "./nav/nav.component";
 import { FooterComponent } from "./footer/footer.component";
 import { HomeComponent } from "./home/home.component";
 import { ServicesComponent } from "./services/services.component";
+import { AboutComponent } from "./about/about.component";
+import { ReviewsComponent } from "./reviews/reviews.component";
+import { ContactsComponent } from "./contacts/contacts.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavComponent, FooterComponent, HomeComponent, ServicesComponent],
+  imports: [RouterOutlet, NavComponent, FooterComponent, HomeComponent, ServicesComponent, AboutComponent, ReviewsComponent, ContactsComponent],
   template: `
-  <!-- nav -->
-   <app-nav />
+    <!-- nav -->
+    <app-nav/>
 
-   <!-- home -->
-    <app-home />
+    <!-- home -->
+    <app-home/>
 
     <!-- services -->
-    <app-services />
+    <app-services/>
 
     <!-- routes get injected here -->
-    <router-outlet />
+    <router-outlet/>
+
+    <!-- about -->
+    <app-about/>
+
+    <!-- reviews -->
+    <app-reviews/>
+
+    <!-- contacts -->
+    <app-contacts/>
 
     <!-- footer -->
-     <app-footer />
+    <app-footer/>
   `,
   styles: [],
 })

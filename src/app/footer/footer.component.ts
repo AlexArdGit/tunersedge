@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
     <footer class="footer">
   <div class="content has-text-centered">
     <p>
-      <strong>Tunersedge</strong>
+    <strong>Copyright &copy;Tunersedge {{ currentYear }} </strong>
     </p>
   </div>
 </footer>
@@ -16,5 +16,5 @@ import { Component } from '@angular/core';
   styles: ``
 })
 export class FooterComponent {
-
+  currentYear: number = new Date().getFullYear();
 }

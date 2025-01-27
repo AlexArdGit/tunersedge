@@ -4,3 +4,9 @@
     --bulma-primary-l: 89%;
     --bulma-navbar-burger-color:var(--bulma-dark);
   }  
+
+  .hero-body {
+      background-image: url('assets/img/home-wallpaper-cold-light.jpeg') !important;
+      background-size: cover;
+      background-position: center center;
+    }

@@ -5,16 +5,37 @@
     --bulma-navbar-burger-color:var(--bulma-dark);
   }  
 
-.hero-body {
-    background-image: url('assets/img/home-wallpaper-cold-light.jpeg') !important;
+  .hero-body {
+    position: relative;
+    height: 100%;
+  }
+
+  .hero-container {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+  }
+
+  .hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/img/home-wallpaper-cold-light.jpeg');
     background-size: cover;
     background-position: center center;
-}
+    background-attachment: fixed;
+    filter: brightness(60%);
+    z-index: 1;
+  }
 
 .img-spacer {
   background-image: url('assets/img/home-wallpaper-cold-light.jpeg') !important;
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
+  filter: brightness(60%);
   height: 500px;
 }
 

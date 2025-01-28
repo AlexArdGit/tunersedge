@@ -11,6 +11,19 @@
     background-position: center center;
 }
 
+.img-spacer {
+  background-image: url('assets/img/home-wallpaper-cold-light.jpeg') !important;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+
+.line-spacer {
+  border-top: 1px solid #e0e0e0;
+  width: 55%;
+  margin: 0 auto;
+}
+
 .swiper-pagination {
   position: relative;
   margin-top: 20px;

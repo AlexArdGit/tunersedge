@@ -5,13 +5,13 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   template: `
-    <footer class="footer">
-  <div class="content has-text-centered">
-    <p>
-    <strong>Copyright &copy;Tunersedge {{ currentYear }} </strong>
-    </p>
-  </div>
-</footer>
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Copyright &copy;Tunersedge {{ currentYear }} </strong>
+      </p>
+    </div>
+  </footer>
   `,
   styles: ``
 })

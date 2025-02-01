@@ -10,6 +10,12 @@ import { Component, ViewChild, ElementRef } from '@angular/core';
   <div class="navbar-brand">
     <a class="navbar-item has-text-weight-bold has-text-light is-size-5" href="#home">TUNERSEDGE</a>
 
+    <div class="navbar-logo">
+      <a href="#home" class="logo-link">
+        <div class="logo"></div>
+      </a>
+    </div>
+
     <a (click)="toggleNavbar()" #navBurger role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
       <span class="has-text-light" aria-hidden="true"></span>
       <span class="has-text-light" aria-hidden="true"></span>
